@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bernadette Estropigan | Academic Portfolio</title>
+
+<style>
+:root {
+    --dark-green: #0f3d2e;
+    --forest-green: #1f6f4a;
+    --leaf-green: #4caf50;
+    --light-green: #eaf8ec;
+    --mint-green: #f7fff8;
+    --gold: #d4af37;
+    --text-color: #1b2d22;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--mint-green);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Hero Section */
+header {
+    background:
+        linear-gradient(rgba(15, 61, 46, 0.85), rgba(31, 111, 74, 0.85)),
+        url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: clamp(2.8rem, 6vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: clamp(1.1rem, 3vw, 2rem);
+    font-weight: 300;
+    color: #d8f9dd;
+    margin-bottom: 25px;
+}
+
+header blockquote {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #f1fff3;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 20px 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+}
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 61, 46, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 14px 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b8ffbf;
+}
+
+/* Main Layout */
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: var(--shadow);
+    border: 1px solid #e6f6e8;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--forest-green);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--light-green);
+}
+
+h4 {
+    color: var(--dark-green);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.badge {
+    background: var(--light-green);
+    border-left: 5px solid var(--leaf-green);
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+/* Gallery Placeholders */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-box {
+    background: linear-gradient(135deg, #eaf8ec, #ffffff);
+    border: 2px dashed #9fd9a6;
+    border-radius: 18px;
+    padding: 50px 20px;
+    text-align: center;
+    color: #4a7c59;
+    font-weight: 600;
+}
+
+/* Quote */
+.quote {
+    font-style: italic;
+    color: var(--forest-green);
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 70px;
+    background: linear-gradient(135deg, var(--dark-green), var(--forest-green));
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 90px 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bernadette Estropigan</h1>
+    <h2>Academic Portfolio | Student Achiever | Future Leader</h2>
+
+    <blockquote>
+        "I'm not perfect, but I strive every day to be a better student,
+        a better helper, and a better version of myself."
+    </blockquote>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#honors">Academic Honors</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#goals">Future Goals</a>
+    <a href="#contact">Contact</a>
+</nav>
